@@ -1,0 +1,48 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-resumescreeningfront-dev-75d9c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264325537:role/amplify-resumescreeningfront-dev-75d9c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264325537:role/amplify-resumescreeningfront-dev-75d9c-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-resumescreeningfront-dev-75d9c-deployment",
+      "UnauthRoleName": "amplify-resumescreeningfront-dev-75d9c-unauthRole",
+      "StackName": "amplify-resumescreeningfront-dev-75d9c",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264325537:stack/amplify-resumescreeningfront-dev-75d9c/e9270ce0-fe3f-11ef-9959-12ccdd6c91c1",
+      "AmplifyAppId": "d2saliux0rwwjv"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "providerPlugin": "awscloudformation",
+      "service": "amplifyhosting",
+      "type": "manual",
+      "output": {},
+      "lastPushTimeStamp": "2025-03-12T13:59:42.181Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-resumescreeningfront-dev-75d9c-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      }
+    },
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-resumescreeningfront-dev-75d9c-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
+      },
+      "lastPushTimeStamp": "2025-03-12T13:59:43.021Z",
+      "output": {
+        "CloudFrontSecureURL": "https://d1m5y21b2w68ml.cloudfront.net",
+        "S3BucketSecureURL": "https://resumescreeningfront-20250312192230-hostingbucket-dev.s3.amazonaws.com",
+        "CloudFrontOriginAccessIdentity": "E3RWOH4N8MIJXD",
+        "WebsiteURL": "http://resumescreeningfront-20250312192230-hostingbucket-dev.s3-website-us-east-1.amazonaws.com",
+        "CloudFrontDistributionID": "E1Y5VBIABS90U1",
+        "Region": "us-east-1",
+        "HostingBucketName": "resumescreeningfront-20250312192230-hostingbucket-dev",
+        "CloudFrontDomainName": "d1m5y21b2w68ml.cloudfront.net"
+      },
+      "lastPushDirHash": "lBo26BuE3VSIovxIb59y2GgS8uo="
+    }
+  }
+}
