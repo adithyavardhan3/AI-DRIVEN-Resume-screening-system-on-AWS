@@ -1,0 +1,11 @@
+.table-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table-row:hover {
+    background: #f5f7fa;
+    transition: background 0.3s ease;
+  }

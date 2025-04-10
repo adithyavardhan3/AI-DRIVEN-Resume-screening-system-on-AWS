@@ -1,0 +1,17 @@
+.about-page {
+    padding: 20px;
+    text-align: center;
+    background-image: url('../assets/background.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .features {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }

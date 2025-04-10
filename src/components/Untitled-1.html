@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Screening Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      background-color: #fff;
+      margin: auto;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .candidate {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      background-color: #fefefe;
+    }
+    .status {
+      font-weight: bold;
+      color: green;
+    }
+    .btn-download {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .btn-download:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI-Driven Resume Screening Result</h1>
+
+    <div class="candidate">
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Email:</strong> john.doe@email.com</p>
+      <p><strong>Skills:</strong> Python, AWS, Machine Learning, NLP</p>
+      <p><strong>Experience:</strong> 4 years</p>
+      <p><strong>Resume Score:</strong> 88%</p>
+      <p class="status">✅ Status: Shortlisted</p>
+      <a href="https://example.com/resume/john_doe.pdf" class="btn-download" target="_blank">Download Resume</a>
+    </div>
+
+    <div class="candidate">
+      <p><strong>Name:</strong> Jane Smith</p>
+      <p><strong>Email:</strong> jane.smith@email.com</p>
+      <p><strong>Skills:</strong> Java, Spring Boot, SQL</p>
+      <p><strong>Experience:</strong> 2 years</p>
+      <p><strong>Resume Score:</strong> 64%</p>
+      <p class="status" style="color: red;">❌ Status: Rejected</p>
+      <a href="https://example.com/resume/jane_smith.pdf" class="btn-download" target="_blank">Download Resume</a>
+    </div>
+
+  </div>
+</body>
+</html>
