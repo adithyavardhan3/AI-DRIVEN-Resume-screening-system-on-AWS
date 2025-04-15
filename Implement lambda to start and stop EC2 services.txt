@@ -1,0 +1,51 @@
+ROLES FOR LAMBDA 
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeInstances",
+        "ec2:StartInstances",
+        "ec2:StopInstances"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+
+
+LAmbda CODE:
+
+
+import boto3
+
+def lambda_handler(event, context):
+    ec2 = boto3.client('ec2', region_name='us-east-1')
+    
+    # Replace with your actual EC2 instance ID(s)
+    instance_ids = ['i-0b3660aa2399a326d']
+    
+    # Describe current instance state
+    response = ec2.describe_instances(InstanceIds=instance_ids)
+    
+    current_state = response['Reservations'][0]['Instances'][0]['State']['Name']
+    
+    if current_state == 'stopped':
+        ec2.start_instances(InstanceIds=instance_ids)
+        action = 'starting'
+    elif current_state == 'running':
+        ec2.stop_instances(InstanceIds=instance_ids)
+        action = 'stopping'
+    else:
+        action = f'Instance is in state: {current_state}. No action taken.'
+    
+    return {
+        'statusCode': 200,
+        'body': f'Instance was {current_state}. Now {action}.'
+    }
+
+
+
+
